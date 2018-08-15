@@ -1,0 +1,14 @@
+{% extends "logs/base.html" %}
+{% block content %}
+
+<p><a href="{% url 'topic' topic.id %}">{{topic}}</a></p>
+<p>添加条目：</p>
+<form action = "{% url 'edit_entry' entry.id %}" method='post'>
+
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="修改">
+
+</form>
+
+{% endblock content %}

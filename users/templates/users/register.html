@@ -1,0 +1,9 @@
+{% extends 'logs/base.html' %}
+{% block content %}
+<form method = "post" action="{% url 'register' %}">
+{% csrf_token %}
+{{ form.as_p }}
+<input type="submit" value="提交">
+<input type="hidden" value="{% url 'index' %}"
+</form>
+{% endblock content %}
