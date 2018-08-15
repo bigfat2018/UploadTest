@@ -25,7 +25,9 @@ SECRET_KEY = '-xi(-s%16h=joqt26)z^tz_om=8w_z8comu^_!bc+%hp(ygtzv'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "bigfat.pythonanywhere.com",
+]
 
 
 # Application definition
