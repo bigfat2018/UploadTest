@@ -2,11 +2,9 @@
 # coding: utf-8
 
 import os
-import sys
+import importlib
 
-# 将系统的编码设置为UTF8
-reload(sys)
-sys.setdefaultencoding('utf8')
+importlib.reload(sys)
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "learning_log.settings")#mysite替换为自己的项目名
 
