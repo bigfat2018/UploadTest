@@ -4,6 +4,7 @@
 import os
 import importlib
 
+
 importlib.reload(sys)
 
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "learning_log.settings")#mysite替换为自己的项目名
