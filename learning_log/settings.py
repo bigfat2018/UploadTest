@@ -23,10 +23,10 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '-xi(-s%16h=joqt26)z^tz_om=8w_z8comu^_!bc+%hp(ygtzv'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
-    "bigfat.pythonanywhere.com",
+    "*",
 ]
 
 
